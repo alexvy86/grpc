@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "GreeterServer": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "GRPC_VERBOSITY": "INFO",
+        "GRPC_TRACE": "call_error,op_failure,connectivity_state"
+      }
+    }
+  }
+}
