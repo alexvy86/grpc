@@ -32,6 +32,9 @@ namespace GreeterClient
       var reply = client.SayHello(new HelloRequest { Name = user });
       Console.WriteLine("Greeting: " + reply.Message);
 
+      Console.WriteLine("Press any key to shutdown channel...");
+      Console.ReadKey();
+
       channel.ShutdownAsync().Wait();
       Console.WriteLine("Press any key to exit...");
       Console.ReadKey();
